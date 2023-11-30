@@ -35,8 +35,9 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/VXI6DuTVm0g?si=w20PqOD7ZL6GVzh3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </section>
-    <section id="beneficios">
-        <article>
+    <section id="beneficios" style="border: 1px solid black">
+    <center>
+        <article >
             <h1>Beneficios</h1>
             <div class="bloco" id="b1">
 
@@ -48,9 +49,43 @@
 
             </div>
         </article>
+    </center>
     </section>
-    <section class="doposto">
+    <section class="doposto" style="border: 1px solid black">
+        <article>
+            <h1>Processos</h1>
+            <button class="accordion" id="topo">Section 1</button>
+            <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
 
+            <button class="accordion">Section 2</button>
+            <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="accordion" id="base">Section 3</button>
+            <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+            }
+            </script>
+        </article>
     </section>
     <section class="degrade">
 
