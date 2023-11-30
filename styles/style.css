@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+/*Mobile*/
+
+:root{
+    --cor1: #1A3EF5;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    height: 100%;    
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    background-color: var(--cor1);
+    height: 50px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+header h1{
+    margin-top: 0px;
+}
+
+section{
+    width:100%;
+    height: 350px;
+    position: relative;
+}
+
+section article > h1#inicioText{
+    text-align: center;
+    color: var(--cor1);
+    font-size: 3em;
+    display: block;
+    padding-top: 100px;
+}
+
+section article > h1{
+    text-align: center;
+    color: var(--cor1);
+    font-size: 3em;
+    display: block;
+}
+
+section article > p{
+    text-align: center;
+    padding: 10px;
+
+}
+
+section.azul{
+    background-color: var(--cor1);
+}
+
+section.azul  article > h1{
+    text-align: right;
+    color: white;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+section.azul article div.foto{
+    width: 113px;
+    height: 200px;
+    border-radius: 20px;
+    background: #4C67F0;
+    display: inline-block;  
+   margin: -30px 20px;
+}
+
+section.azul article > p{
+    text-align: right;
+    display: inline-block;
+    position: absolute;
+}
+
+section#beneficios >  article{
+     max-width: 500px;
+}
+
+section#beneficios >  article > div.bloco{
+    display: inline-block;
+    min-width: 100px;
+    min-height: 150px;
+    border-radius: 20px;
+    background: #1A3EF5;
+    box-shadow: -9px 9px 14.2px -5px #000;
+    margin-left: 20px;
+}
+
+section.degrade {
+    background-image: linear-gradient(to bottom, var(--cor1),var(--cor1), #1a3ef5af,white);
+}
+
+section.degrade > h1{
+    text-align: center;
+    color: white;
+}
+
+section.degrade > div.video {
+    padding: 30px;
+    height: 70%;
+    width: 70%;
+}
+
+section.degrade >  div.video > iframe{ 
+    position: absolute;
+    display: block;
+    top: 55%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+}
+
+section.doposto{
+    background-image: linear-gradient(to top, var(--cor1), #1A3EF5,#1A3EF5, #1a3ef5af,  transparent);
+}
+
+footer{
+    background-color: white;
+    width: 100%;
+    height: 50px;
+}
