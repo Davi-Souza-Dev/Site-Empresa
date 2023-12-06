@@ -245,16 +245,32 @@ section > article > div#bb2{
 
 section > article > a >div.opcao{
     width: 80px;
-    height: 100px;
+    height: 80px;
     border-radius: 80px;
     background: #D9D9D9;
     display: inline-block;
-    margin-left: 100px;
-    position: relative;
+    position: absolute;
+
+   
+    
 }
 
 section > article > a {
    text-decoration: none;
+}
+
+section > article > a > #op1{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-30%, -50%);
+}
+
+section > article > a > #op2{
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translate(-70%, -50%);
 }
 
 section > article > a > div.opcao > img{
