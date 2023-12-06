@@ -51,7 +51,6 @@ section article > h1{
 section article > p{
     text-align: center;
     padding: 10px;
-
 }
 
 section.azul{
@@ -65,13 +64,14 @@ section.azul  article > h1{
     padding: 20px;
 }
 
-section.azul article div.foto{
+div.foto{
     width: 113px;
     height: 200px;
     border-radius: 20px;
     background: #4C67F0;
     display: inline-block;  
-   margin: -30px 20px;
+    margin: -30px 20px;
+    box-shadow: -9px 9px 14.2px -5px #000;
 }
 
 section.azul article > p{
@@ -97,6 +97,17 @@ section#beneficios > center > article > div.bloco{
     box-shadow: -9px 9px 14.2px -5px #000;
     margin-left: 20px;
 }
+
+section#beneficios > center > article > div#b2{
+    background: #4C67F0;
+    box-shadow: 0px 9px 14.2px -5px #000;
+}
+
+section#beneficios > center > article > div#b3{
+    background: #A8B5F9;
+    box-shadow: 9px 9px 14.2px -5px #000;
+}
+
 
 section.degrade {
     background-image: linear-gradient(to bottom, var(--cor1),var(--cor1), #1a3ef5af,white);
@@ -130,45 +141,92 @@ section.doposto{
 
 /*Processos*/
 
-section.doposto > article > div#processos{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    width: 80%;
-}
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.accordion#topo{
-    border-radius: 20px 20px 0px 0px;
-}
-
-.active, .accordion:hover {
-  background-color: #ccc; 
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-}
-
-div.cor1 > p{
-    color: var(--cor1);
-}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 2px solid #ccc;
+    height: 200px;
+  }
 
 /*Fim processos*/
+
+/*Valores*/
+.Valores{
+    width: 100%;
+    height: 80%;
+    background-image: url(../imagens/planos.png);
+    background-repeat: no-repeat;
+    background-position: center  center;
+    background-size: contain;
+}
+/*Fim valores*/
+
+/*Sobre mim*/
+    div.foto#f2{
+        display: inline-block;
+        min-width: 120px;
+        min-height: 200px;
+        border-radius: 20px;
+        background: #1A3EF5;
+        box-shadow: -9px 9px 14.2px -5px #000;
+        margin: 10px;
+    }
+
+    p#text-sobremim{
+        text-align: right;
+        display: inline-block;
+        position: absolute;
+        width: 50%;
+        left: 50%;
+        transform: translate(-10%);
+    }
+
+/*Fim Sobre mim*/
+
+section > article > div.bloco-B{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+section > article > div#bb2{
+    position: absolute;
+    left: 100%;
+    top: 100%;
+    transform: translate(-50px, -50px);
+}
+
+
 footer{
     background-color: white;
     width: 100%;

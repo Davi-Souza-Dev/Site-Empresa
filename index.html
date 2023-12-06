@@ -35,80 +35,84 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/VXI6DuTVm0g?si=w20PqOD7ZL6GVzh3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </section>
-    <section id="beneficios" style="border: 1px solid black">
+    <section id="beneficios">
     <center>
         <article >
             <h1>Beneficios</h1>
             <div class="bloco" id="b1">
 
             </div>
-            <div class="bloco" id="b1">
+            <div class="bloco" id="b2">
 
             </div >
-            <div class="bloco" id="b1">
+            <div class="bloco" id="b3">
 
             </div>
         </article>
     </center>
     </section>
-    <section class="doposto" style="border: 1px solid black">
+    <section class="doposto">
         <article>
             <h1>Processos</h1>
-            <div id="processos">
-                <button class="accordion" id="topo">Section 1</button>
-                <div class="panel" class="cor1">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-
-                <button class="accordion">Section 2</button>
-                <div class="panel" class="cor2">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-
-                <button class="accordion">Section 3</button>
-                <div class="panel" class="cor1">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                
-                <button class="accordion" >Section 3</button>
-                <div class="panel" class="cor2">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-
-                <button class="accordion" >Section 3</button>
-                <div class="panel" class="cor1">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                
-
-                <script>
-                var acc = document.getElementsByClassName("accordion");
-                var i;
-
-                for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                    
-                    } else {
-                    panel.style.display = "block";
-                    }
-                });
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Parte1')">Parte 1</button>
+                <button class="tablinks" onclick="openCity(event, 'Parte2')">Parte 2</button>
+                <button class="tablinks" onclick="openCity(event, 'Parte3')">Parte 3</button>
+              </div>
+              
+              <div id="Parte1" class="tabcontent" style="display: block;">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+              </div>
+              
+              <div id="Parte2" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p> 
+              </div>
+              
+              <div id="Parte3" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+              </div>
+              
+              <script>
+              function openCity(evt, cityName) {
+                var i, tabcontent, tablinks, inicio;
+                inicio = 1;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
                 }
-                </script>
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+              }
+              </script>
             </div>
         </article>
     </section>
     <section class="degrade">
-
+            <h1>Valores</h1>
+            <div class=Valores></div>
     </section>
     <section>
-
+        <article>
+            <h1>Sobre mim</h1>
+            <div class="foto" id="f2"></div>
+            <p id="text-sobremim">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat enim rerum, minus dolor quibusdam molestias blanditiis eveniet quisquam impedit consequuntur iusto voluptates quia aliquid! Adipisci dignissimos voluptatum odit et sit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium aliquam, rerum tempore officiis laboriosam sapiente pariatur error odio, libero nam ipsam. Quas molestias repellat ad earum itaque voluptatibus minima ex.
+            </p>
+            
+        </article>
     </section>
     <section class="azul">
-
+        <article>
+            <div class="bloco-B" id="bb1"></div>
+            <div class="bloco-B" id="bb2"></div>
+        </article>
     </section>
     <footer>
         
