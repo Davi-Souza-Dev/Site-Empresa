@@ -33,12 +33,13 @@ section{
     position: relative;
 }
 
-section article > h1#inicioText{
+
+section article > p#inicioText{
     text-align: center;
-    color: var(--cor1);
-    font-size: 3em;
-    display: block;
-    padding-top: 70px;
+    padding-top: 80px;
+    font-size: 30px;
+    position: absolute;
+    
 }
 
 section article > h1{
@@ -48,9 +49,20 @@ section article > h1{
     display: block;
 }
 
+
+section#apresentacao > h1{
+    margin-top: 20px;
+}
+
+
 section article > p{
     text-align: center;
     padding: 10px;
+    font-size: 20px;
+}
+
+#apresentacao{
+    height: 200px;
 }
 
 section.azul{
@@ -58,7 +70,6 @@ section.azul{
 }
 
 section.azul  article > h1{
-    text-align: right;
     color: white;
     padding: 10px;
     display: block;
@@ -68,7 +79,7 @@ section.azul  article > h1{
 
 section#final{
     height: 250px;
-    margin-top: 50px;
+    margin-top: -50px;
 }
 
 
@@ -76,20 +87,11 @@ section.azul  article > #contato{
     text-align: center;
 }
 
-div.foto{
-    width: 113px;
-    height: 200px;
-    border-radius: 20px;
-    background: #4C67F0;
-    display: inline-block;  
-    margin: -30px 20px;
-    box-shadow: -9px 9px 14.2px -5px #000;
-}
-
 section.azul article > p{
-    text-align: right;
     display: inline-block;
     position: absolute;
+    text-align: justify;
+    text-indent: 20px;
 }
 
 section#beneficios{
@@ -131,9 +133,9 @@ section.degrade > h1{
 }
 
 section.degrade > div.video {
-    padding: 30px;
-    height: 70%;
-    width: 70%;
+    padding: 20px;
+    height: 80%;
+    width: 90%;
 }
 
 section.degrade >  div.video > iframe{ 
@@ -143,8 +145,8 @@ section.degrade >  div.video > iframe{
     left: 50%;
 
     transform: translate(-50%, -50%);
-    width: 70%;
-    height: 70%;
+    height: 80%;
+    width: 90%;
 }
 
 section.doposto{
@@ -155,9 +157,8 @@ section.doposto{
 
 /* Style the tab */
 .tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    border: 1px solid #000000;
+    background-color: var(--cor1);
   }
   
   /* Style the buttons inside the tab */
@@ -169,25 +170,32 @@ section.doposto{
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: 17px;
+    width: 25%;
   }
   
   /* Change background color of buttons on hover */
   .tab button:hover {
-    background-color: #ddd;
+    background-color: #ffffff;
+    transition: 0.5s;
   }
   
   /* Create an active/current tablink class */
   .tab button.active {
-    background-color: #ccc;
+    background-color: #ffffff;
+    color: var(--cor1);
+    font-weight: bolder;
   }
   
   /* Style the tab content */
   .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 2px solid #ccc;
+    border: 2px solid #ffffff;
     height: 200px;
+    text-align: justify;
+    color: #ffffff;
+    font-size: 20px;
+    text-indent: 20px;
   }
 
 /*Fim processos*/
@@ -215,12 +223,9 @@ section.doposto{
     }
 
     p#text-sobremim{
-        text-align: right;
         display: inline-block;
         position: absolute;
-        width: 50%;
-        left: 50%;
-        transform: translate(-10%);
+        text-align: justify;
     }
 
 /*Fim Sobre mim*/
@@ -238,7 +243,7 @@ section > article > div#bb2{
     transform: translate(-50px, -50px);
 }
 
-section > article > div.opcao{
+section > article > a >div.opcao{
     width: 80px;
     height: 100px;
     border-radius: 80px;
@@ -248,7 +253,11 @@ section > article > div.opcao{
     position: relative;
 }
 
-section > article > div.opcao > img{
+section > article > a {
+   text-decoration: none;
+}
+
+section > article > a > div.opcao > img{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -256,7 +265,10 @@ section > article > div.opcao > img{
     width: 60%;
 }
 
-
+section > article > a > div.opcao > img:hover{
+    top: 40%;
+    transition: 0.2s;
+}
 
 footer{
     background-color: white;
