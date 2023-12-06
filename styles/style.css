@@ -68,6 +68,7 @@ section.azul  article > h1{
 
 section#final{
     height: 250px;
+    margin-top: 50px;
 }
 
 
@@ -101,8 +102,8 @@ section#beneficios > center >  article{
 
 section#beneficios > center > article > div.bloco{
     display: inline-block;
-    min-width: 120px;
-    min-height: 200px;
+    min-width: 100px;
+    min-height: 160px;
     border-radius: 20px;
     background: #1A3EF5;
     box-shadow: -9px 9px 14.2px -5px #000;
@@ -238,8 +239,8 @@ section > article > div#bb2{
 }
 
 section > article > div.opcao{
-    width: 100px;
-    height: 120px;
+    width: 80px;
+    height: 100px;
     border-radius: 80px;
     background: #D9D9D9;
     display: inline-block;
