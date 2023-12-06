@@ -264,4 +264,5 @@ footer{
     text-align: center;
     font-size: 10px;
     font-weight: bolder;
+    color: var(--cor1);
 }
