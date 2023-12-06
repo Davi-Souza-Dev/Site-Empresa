@@ -62,7 +62,7 @@ section article > p{
 }
 
 #apresentacao{
-    height: 200px;
+    height: 280px;
 }
 
 section.azul{
@@ -133,7 +133,7 @@ section.degrade > h1{
 }
 
 section.degrade > div.video {
-    padding: 20px;
+    padding: 10px;
     height: 80%;
     width: 90%;
 }
@@ -168,7 +168,7 @@ section.doposto{
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 14px 10px;
     transition: 0.3s;
     width: 25%;
   }
@@ -189,13 +189,12 @@ section.doposto{
   /* Style the tab content */
   .tabcontent {
     display: none;
-    padding: 6px 12px;
-    border: 2px solid #ffffff;
     height: 200px;
     text-align: justify;
     color: #ffffff;
     font-size: 20px;
     text-indent: 20px;
+    padding: 10px;
   }
 
 /*Fim processos*/
@@ -226,6 +225,7 @@ section.doposto{
         display: inline-block;
         position: absolute;
         text-align: justify;
+        font-size: 19px;
     }
 
 /*Fim Sobre mim*/
