@@ -45,15 +45,16 @@ section article > p#inicioText{
 /*Efeito typer*/
 
 section article > h1#inicio{
-    padding-top: 50px;
+    padding-top: 25px;
 }
   
 
 section article > h1 > a#inicioText{
-    text-align: center;
-    font-size: 36px;
+    text-align: justify;
+    font-size: 30px;
     text-decoration: none;
     color: var(--cor1);
+
 }
   
  
