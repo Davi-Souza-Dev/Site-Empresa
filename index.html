@@ -21,14 +21,14 @@
               </h1>
               <script>
                 var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
+                this.toRotate = toRotate;
+                this.el = el;
+                this.loopNum = 0;
+                this.period = parseInt(period, 10) || 2000;
+                this.txt = '';
+                this.tick();
+                this.isDeleting = false;
+            };
 
     TxtType.prototype.tick = function() {
         var i = this.loopNum % this.toRotate.length;
@@ -97,9 +97,35 @@
     <center>
         <article >
             <h1>Beneficios</h1>
-            <div class="bloco" id="b1"></div>
-            <div class="bloco" id="b2"></div >
-            <div class="bloco" id="b3"></div>
+
+            <div class="slider">
+  
+                <a href="#slide-1">1</a>
+                <a href="#slide-2">2</a>
+                <a href="#slide-3">3</a>
+              
+                <div class="slides">
+                  <div id="slide-1">
+                    <h3>Credibilidade e Profissionalismo</h3>
+                    <p>
+                        Um site bem projetado e atualizado transmite uma imagem profissional e estabelece a credibilidade da empresa aos olhos dos clientes.
+                    </p>
+                  </div>
+                  <div id="slide-2">
+                    <h3>Competitividade</h3>
+                    <p>
+                        Ter um site coloca sua empresa em pé de igualdade com concorrentes que também investem na presença online, garantindo que você não fique para trás no ambiente digital.
+                    </p>
+                  </div>
+                  <div id="slide-3">
+                    <h3>Marketing Eficiente</h3>
+                    <p>
+                        O site é uma ferramenta poderosa para marketing digital, oferecendo a oportunidade de promover produtos, serviços e conteúdo relevante para um público amplo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
         </article>
     </center>
     </section>
@@ -154,6 +180,7 @@
     </section>
     <section class="degrade">
             <h1>Valores</h1>
+            <p>Os valores podem variar de acordo com o que você precisa, estes são apenas valores inícias.</p>
             <div class=Valores></div>
     </section>
     <section>
@@ -181,6 +208,7 @@
                     <img src="imagens/whatsapp-icon.png" alt="icone whatsapp">
                 </div>
             </a>
+
         </article>
     </section>
     <footer>
