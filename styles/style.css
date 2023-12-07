@@ -324,6 +324,7 @@ img {vertical-align: middle;}
   position: relative;
   margin: auto;
   height: 300px;
+  padding: 20px;
 }
 
 .slideshow-container img{
