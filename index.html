@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Páginal inicial</title>
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="styles/medias.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
             <script type="text/javascript">// <![CDATA[
             $(document).ready(function() {
@@ -237,16 +239,25 @@
               <br>
               
               <div class="mySlides fade">
-                  <img src="imagens/1.png" style="width:100%">
+                  <picture>
+                    <source media="(min-width:500px )" srcset="imagens/plano1.png">
+                    <img src="imagens/1.png" style="width:100%">
+                  </picture>
+               
+              </div>
+              
+              <div class="mySlides fade">
+                <picture>
+                  <source media="(min-width: 500px)" srcset="imagens/plano2.png">
+                  <img src="imagens/2.png" style="width:100%">
                 </picture>
               </div>
               
               <div class="mySlides fade">
-                <img src="imagens/2.png" style="width:100%">
-              </div>
-              
-              <div class="mySlides fade">
-                <img src="imagens/3.png" style="width:100%">
+                <picture>
+                  <source media="(min-width: 500px)" srcset="imagens/plano3.png">
+                  <img src="imagens/3.png" style="width:100%">
+                </picture>
               </div>
               
               <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -305,7 +316,7 @@
             <div class="bloco-B" id="bb1"></div>
             <div class="bloco-B" id="bb2"></div>
             <h1 id="contato">Contato</h1>
-            <a href="">
+            <a href="mailto:infinitecoders01@gmail.com">
                 <div class="opcao" id="op1">
                     <img src="imagens/gmail-icon.png" alt="icone mail">
                 </div>
@@ -315,7 +326,6 @@
                     <img src="imagens/whatsapp-icon.png" alt="icone whatsapp">
                 </div>
             </a>
-
         </article>
     </section>
     <footer>

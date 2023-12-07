@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/*
+    Mobile devices – 320px — 480px.
+    iPads, Tablets – 481px — 768px.
+    Small screens, laptops – 769px — 1024px.
+    Desktops, large screens – 1025px — 1200px.
+    Extra large screens, TV – 1201px, and more.
+*/
+
+/*Tablets*/
+
+@media screen and (min-width: 600px) {
+    section article > h1#inicio{
+        padding-top: 40px;
+        text-shadow: 2px 3px 10px var(--cor3);
+    
+    }
+      
+    
+    section article > h1 > a#inicioText{
+        text-align: justify;
+        font-size: 40px;
+        text-decoration: none;
+        color: var(--cor1);
+    }
+
+    section.degrade > div.video {
+        padding: 10px;
+        height: 80%;
+        width: 90%;
+    }
+    
+    section.degrade >  div.video > iframe{ 
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+    
+        transform: translate(-50%, -50%);
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    .slider {
+        width: 500px;
+        height: 100%;
+        text-align: center;
+        overflow: hidden;
+      }
+
+    .slides > div {
+        width: 500px;
+        height: 300px;
+
+      }
+
+    
+}
