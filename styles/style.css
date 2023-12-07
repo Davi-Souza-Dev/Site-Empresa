@@ -323,7 +323,12 @@ img {vertical-align: middle;}
   max-width: 1000px;
   position: relative;
   margin: auto;
+  height: 300px;
 }
+
+.slideshow-container img{
+    height: 300px;
+  }
 
 /* Next & previous buttons */
 .prev, .next {
@@ -406,12 +411,15 @@ img {vertical-align: middle;}
 /*Fim valores*/
 
 /*Sobre mim*/
-    div.foto#f2{
+    div#f2{
+        background-image: url(../imagens/foto.jpg);
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
         display: inline-block;
         min-width: 120px;
         height: 220px;
         border-radius: 20px;
-        background: var(--cor2);
         box-shadow: -9px 9px 14.2px -5px #000;
         margin: 10px;
     }
@@ -420,7 +428,7 @@ img {vertical-align: middle;}
         display: inline-block;
         position: absolute;
         text-align: justify;
-        font-size: 15px;
+        font-size: 20px;
     }
 
 /*Fim Sobre mim*/
