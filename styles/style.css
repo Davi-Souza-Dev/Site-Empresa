@@ -350,10 +350,10 @@ section.doposto{
 
 /*Valores*/
   section#valores{
-    height: 400px;
+    height: 500px;
   }
 .mySlides {display: none}
-img {vertical-align: middle; padding-bottom: 20px;}
+img#slide {vertical-align: middle; padding-bottom: 20px;}
 
 /* Slideshow container */
 .slideshow-container {
