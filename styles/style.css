@@ -18,18 +18,55 @@ html, body{
     width: 100%;
 }
 
-header{
-    width: 100%;
-    background-color: var(--cor1);
-    height: 50px;
-    border-radius: 0px 0px 10px 10px;
+
+.topnav {
+  overflow: hidden;
+  background-color: var(--cor1);
+  position: relative;
+  border-radius: 0px 0px 10px 10px;
 }
 
-header h1{
-    margin-top: 0px;
-    color: var(--cor3);
-    
+.topnav #myLinks {
+  display: none;
 }
+
+.menu-icon{
+  width: 30px;
+  height: 30px;
+  float: right;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(../imagens/menu.png) no-repeat;ze: cover;
+  background-position: center center;
+  margin: auto;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+}
+
+#logo {
+  color: white;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+}
+
 
 section{
     height: 350px;
@@ -306,7 +343,7 @@ section.doposto{
     color: #ffffff;
     font-size: 20px;
     text-indent: 20px;
-    padding: 10px;
+    margin-bottom: 20px;
   }
 
 /*Fim processos*/
@@ -316,7 +353,7 @@ section.doposto{
     height: 400px;
   }
 .mySlides {display: none}
-img {vertical-align: middle;}
+img {vertical-align: middle; padding-bottom: 20px;}
 
 /* Slideshow container */
 .slideshow-container {
@@ -429,7 +466,7 @@ img {vertical-align: middle;}
         display: inline-block;
         position: absolute;
         text-align: justify;
-        font-size: 10px;
+        font-size: 15px;
     }
 
 /*Fim Sobre mim*/
