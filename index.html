@@ -7,32 +7,6 @@
     <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css" media="all">
     <link rel="stylesheet" href="styles/medias.css">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-            <script type="text/javascript">// <![CDATA[
-            $(document).ready(function() {
-            function filterPath(string) {
-            return string
-            .replace(/^\//,'')
-            .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
-            .replace(/\/$/,'');
-            }
-            $('a[href*=#]').each(function() {
-            if ( filterPath(location.pathname) == filterPath(this.pathname)
-            && location.hostname == this.hostname
-            && this.hash.replace(/#/,'') ) {
-            var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-            var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-            if ($target) {
-            var targetOffset = $target.offset().top;
-            $(this).click(function() {
-            $('html, body').animate({scrollTop: targetOffset}, 1500); //tempo
-            return false;
-            });
-            }
-            }
-            });
-            });
-            // ]]></script>
 </head>
 <body>
     <header>
@@ -143,10 +117,11 @@
    
     <section class="degrade">
         <h1>Vídeo de Divulgação</h1>
+        <a name="video">
         <div class="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/teAPggCoeMo?si=F9IhmDsr_CGbDCZR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-        <a name="video"></a>
+        </a>
     </section>
     <section id="beneficios">
 
