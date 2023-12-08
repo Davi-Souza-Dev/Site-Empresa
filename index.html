@@ -160,50 +160,7 @@
       <a name="processos"></a>
         <article>
             <h1>Processos</h1>
-            <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'Parte1')">Conversa </button>
-                <button class="tablinks" onclick="openCity(event, 'Parte2')">Imagem</button>
-                <button class="tablinks" onclick="openCity(event, 'Parte3')">Produção</button>
-                <button class="tablinks" onclick="openCity(event, 'Parte4')">Finalização</button>
-              </div>
-              
-              <div id="Parte1" class="tabcontent" style="display: block;">
-                <p>Iremos até você para analisar suas ideias e fazer um brainstorm com tudo o que você deseja em seu site, logo em seguida iremos verificar cada ideia é darmos sugestões com base nas marcas mais famosas.
-                </p>
-              </div>
-              
-              <div id="Parte2" class="tabcontent">
-                <p>Após nossa conversa, iremos criar uma espécie de imagem para seu site, assim você poderá adicionar ou remover o quanto desejar, para deixar seu site a cara da sua empresa. Logo iremos pedir para que realize o primeiro pagamento, assim após a confirmação começaremos a produção.</p> 
-              </div>
-              
-              <div id="Parte3" class="tabcontent">
-                <p>
-                    Quando o primeiro pagamento for realizado, começaremos a produzir, iremos te enviar um link apenas para visualização do site a cada semana, para que você possa observar cada etapa sendo concluida em tempo real.
-                </p>
-              </div>
-
-              <div id="Parte4" class="tabcontent">
-                <p>Para finalizarmos, iremos te explicar a parte de Domínio e Hospedagem para que seu site possa permanecer no ar e possuir o nome de sua empresa,  e iremos realizar o pagamento final.
-                </p>
-              </div>
-              
-              <script>
-              function openCity(evt, cityName) {
-                var i, tabcontent, tablinks, inicio;
-                inicio = 1;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                  tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(cityName).style.display = "block";
-                evt.currentTarget.className += " active";
-              }
-              </script>
-            </div>
+            <div id="processos"></div>
         </article>
     </section>
     <section class="degrade" id="valores">
