@@ -16,7 +16,10 @@
         text-shadow: 2px 3px 10px var(--cor3);
     
     }
-      
+
+    section.doposto{
+        height: 267px;
+    }
     
     section article > h1 > a#inicioText{
         text-align: justify;
