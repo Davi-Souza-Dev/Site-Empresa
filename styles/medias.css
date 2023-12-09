@@ -7,7 +7,11 @@
     Desktops, large screens – 1025px — 1200px.
     Extra large screens, TV – 1201px, and more.
 */
-
+:root{
+    --cor1: #3FCCF5;
+    --cor2: #70D6F5;
+    --cor3: #97a4e8;
+}
 /*Tablets*/
 
 @media screen and (min-width: 600px) {
@@ -61,5 +65,92 @@
         background-image: url(../imagens/processos.png);
       }
 
+    
+}
+/*Compitador*/
+
+@media screen and (min-width: 800px) {
+    menu{
+        display: block;
+        background-color: var(--cor1);
+        position: relative;
+        border-radius: 0px 0px 10px 10px;
+        height: 50px;
+    }
+    ul{
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%);
+    }
+
+    li{
+        display: inline;
+        color: white;
+   }
+
+   a{
+    text-decoration: none;
+   }
+
+    .topnav{
+        display: none;
+    }
+    section{
+        height: 450px;
+        position: relative;
+        min-width: 380px;
+    }
+
+    section article#type{
+        max-width: 416px;
+        margin: auto;
+    }
+
+    section.azul > article > p{
+        max-width: 300px;
+        text-align: center;
+        display: block;
+        margin: auto;
+        position: inherit;
+    }
+
+    section.doposto{
+        height: 480px;
+    }
+
+    .prev, .next {
+        margin-top: -22px;
+        margin-left: 100px;
+        margin-right: 100px;
+
+      }
+
+    #text-sobremim{
+        max-width: 253px;
+        text-align: center;
+        display: block;
+        margin: auto;
+        position: inherit;
+        font-size: 20px;
+    }
+
+    article#sobremim{
+        max-width: 40%;
+        margin: auto;
+    }
+
+    section > article > a > #op1{
+        left: 40%;
+        top: 50%;
+        transform: translate(-40%, -50%);
+    }
+    
+    section > article > a > #op2{
+        left: 55%;
+        top: 50%;
+        transform: translate(-55%, -50%);
+    }
     
 }
