@@ -12,7 +12,7 @@
     <header>
       <menu>
         <img src="imagens/logo.png" id="logo">
-        <ul>
+        <ul id="menu">
           <a href="#video">
             <li>Vídeo</li>
           </a>
@@ -191,65 +191,47 @@
               <h1 style="color: white;">Valores</h1>
               <p>Os valores podem variar de acordo com o que você precisar, estes são apenas valores inícias.</p>
               <br>
-              
-              <div class="mySlides fade">
-                  <picture>
-                    <source media="(min-width:500px )" srcset="imagens/1.png">
-                    <div class="imagem1"></div>
-                  </picture>
-              </div>
-              
-              <div class="mySlides fade">
-                <picture>
-                  <source media="(min-width:500px )" srcset="imagens/1.png">
-                  <div class="imagem2"></div>
-                </picture>
-            </div>
+              <div class="container">
+                  <div class="card v1">
+                    <div class="bloco b1"></div>
+                    <h1>Plano inicial</h1>
+                    <ul class="plano">
+                      <li>Uma página do site</li>
+                      <li>Até 5 Modificações </li>
+                      <li>Textos simples</li>
+                      <li>Imagens Genéricas</li>
+                      <li>Logomarca simples </li>
+                      <li>Sem vídeo</li>
+                    </ul>
+                  </div>
+                  <div class="card v2">
+                    <div class="bloco b2"></div>
+                    <h1>Plano Intermediario</h1>
+                    <ul class="plano">
+                      <li>Mais de duas páginas por site</li>
+                      <li>Máximo de 10 modificações</li>
+                      <li>Textos chamativos</li>
+                      <li>Imagens personalizadas</li>
+                      <li>vídeo simples - 10 segundos </li>
+                      <li>Logomarca simples</li>
 
-            <div class="mySlides fade">
-              <picture>
-                <source media="(min-width:500px )" srcset="imagens/1.png">
-                <div class="imagem3"></div>
-              </picture>
-          </div>
-              
-              <a class="prev" onclick="plusSlides(-1)">❮</a>
-              <a class="next" onclick="plusSlides(1)">❯</a>
-              
+                    </ul>
+                  </div>
+                  <div class="card v3">
+                    <div class="bloco b3"></div>
+                    <h1>Plano Premium</h1>
+                    <ul class="plano">
+                      <li>Páginas ilimitadas</li> 
+                      <li>Sem limite de modificações </li>
+                      <li>Imagens próprias ou personalizadas </li>
+                      <li>Textos completos e chamativos</li>
+                      <li>Logomarca profissional</li>
+                      <li>Vídeo completo</li>
+
+                    </ul>
+                  </div>
               </div>
-              <br>
-              
-              <script>
-              let slideIndex = 1;
-              showSlides(slideIndex);
-              
-              function plusSlides(n) {
-                showSlides(slideIndex += n);
-              }
-              
-              function currentSlide(n) {
-                showSlides(slideIndex = n);
-              }
-              
-              function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {slideIndex = 1}    
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";  
-                }
-                for (i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex-1].style.display = "block";  
-                dots[slideIndex-1].className += " active";
-              }
-              </script>
-              </article>
-            
-            
+            </article>
     </section>
     <section>
       <a name="sobremim"></a>

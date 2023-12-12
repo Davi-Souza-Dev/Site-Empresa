@@ -77,21 +77,25 @@
         border-radius: 0px 0px 10px 10px;
         height: 50px;
     }
-    ul{
-        display: block;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%);
+    ul#menu{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        margin-top: -60px;
+        list-style: none;
     }
 
-    li{
-        display: inline;
+    ul#menu > a > li{
         color: white;
+        list-style: none;
+        padding: 20px;
    }
 
-   a{
+   ul#menu > a {
     text-decoration: none;
+    display: flex;
+    justify-content: space-around;
    }
 
     .topnav{
