@@ -14,7 +14,7 @@
 }
 /*Tablets*/
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
     section article > h1#inicio{
         padding-top: 40px;
         text-shadow: 2px 3px 10px var(--cor3);
@@ -22,7 +22,7 @@
     }
 
     section.doposto{
-        height: 267px;
+        height: 300px;
     }
     
     section article > h1 > a#inicioText{
@@ -65,9 +65,13 @@
         background-image: url(../imagens/processos.png);
       }
 
+      .container > .card{
+        font-size: 13px;
+      }
+
     
 }
-/*Compitador*/
+/*Computador*/
 
 @media screen and (min-width: 800px) {
     menu{
@@ -121,8 +125,13 @@
     }
 
     section.doposto{
-        height: 600px;
+        height: 500px;
     }
+
+    div#processos{
+        max-width: 80%;
+        margin: auto;
+      }
 
     .prev, .next {
         margin-top: -22px;
@@ -157,4 +166,7 @@
         transform: translate(-55%, -50%);
     }
     
+    .container > .card{
+        font-size: 20px;
+      }
 }
